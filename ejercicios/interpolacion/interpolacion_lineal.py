@@ -10,14 +10,18 @@ from ejercicios.interpolacion.error_estimado_interpolacion import (
     error_estimado_interpolacion,
 )
 
-def  interpolacion_lineal ( x0 , y0 , x1 , y1 , x , x2 = None , y2 = None ):
-    # Interpolación lineal
-    y  =  y0  + (( y1  -  y0 ) / ( x1  -  x0 )) * ( x  -  x0 )
+def interpolacion_lineal(x0, y0, x1, y1, x, x2=None, y2=None):
 
-    # Por ahora no se calcula el error
-    error  =  None
+    y = y0 + ((y1 - y0) / (x1 - x0)) * (x - x0)
 
-    return  y , error
+    error = None
+
+    if x2 is not None and y2 is not None:
+        error = error_estimado_interpolacion(
+            x0, y0, x1, y1, x2, y2, x
+        )
+
+    return y, error
 
 
 if __name__ == "__main__":
