@@ -15,7 +15,7 @@ def  interpolacion_lineal ( x0 , y0 , x1 , y1 , x , x2 = None , y2 = None ):
     y  =  y0  + (( y1  -  y0 ) / ( x1  -  x0 )) * ( x  -  x0 )
 
     # Por ahora no se calcula el error
-    error  =  Ninguno
+    error  =  None
 
     return  y , error
 
