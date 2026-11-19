@@ -17,7 +17,7 @@ def  interpolacion_lineal ( x0 , y0 , x1 , y1 , x , x2 = None , y2 = None ):
     # Por ahora no se calcula el error
     error  =  Ninguno
 
-    devolver  y , error
+    return  y , error
 
 
 if __name__ == "__main__":
