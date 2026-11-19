@@ -30,8 +30,9 @@ evaluacion:
   max_intentos: 2               # envíos permitidos (lo impone el Apps Script)
   accion: "guardar"
   # ⚠️ REEMPLAZAR por los valores reales al desplegar el Apps Script de U4.
-  webhook_token: ""
-  apps_script_url: ""
+  webhook_token: "43f6f220-fc6e-4972-a69e-a11b54a629ec"
+  apps_script_url: "https://script.google.com/macros/s/AKfycbzD5k2BVwJ6pHjBgbc3-f1pbV9zrX0AloZfPiCyHSrsRZ7Kfno6ZQOnqzEbTikVlO6lRQ/exec"
+
 
 datos:
   # Ejemplos del libro usados en cuadernos y pruebas.
