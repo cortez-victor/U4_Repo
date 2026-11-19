@@ -21,9 +21,16 @@ def interpolacion_lineal(x0, y0, x1, y1, x, x2=None, y2=None):
     x2, y2 son OPCIONALES: puedes terminar el método sin usarlos y, cuando
     escribas ``error_estimado_interpolacion``, regresar aquí y activarlos.
     """
-    # error = None
-    # return y, error
-    raise NotImplementedError("Completa interpolacion_lineal")
+
+def interpolacion_lineal(x0, y0, x1, y1, x, x2=None, y2=None):
+    # Interpolación lineal
+    y = y0 + ((y1 - y0) / (x1 - x0)) * (x - x0)
+
+    # Por ahora no se calcula el error
+    error = None
+
+    return y, error
+
 
 
 if __name__ == "__main__":
